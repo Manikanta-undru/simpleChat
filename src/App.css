@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --primary: "#036bfa";
+  --secondary: "#f4f6f8";
+  --text: "#373737";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Poppins";
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-bar {
+  transition: all 1 ease;
 }
-
-.App-link {
-  color: #61dafb;
+.outMessage {
+  align-self: flex-end;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outMessage p {
+  background-color: rgb(59 130 246);
+  color: #fff;
+  text-align: left;
+  display: block;
+  border-bottom-left-radius: 1rem !important;
+  border-bottom-right-radius: 0rem !important;
+}
+.outMessage span {
+  right: 0.75rem;
+  left: unset;
+}
+.blue-button {
+  background-color: rgb(59 130 246) !important;
+  color: #fff !important;
 }
