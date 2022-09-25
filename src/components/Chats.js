@@ -30,6 +30,7 @@ const Chats = () => {
       );
       handleSelect(defaultUser[0][1].userInfo);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [load]);
   const handleSelect = (u) => {
     dispatch({ type: "CHANGE_USER", payload: u });

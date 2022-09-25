@@ -95,6 +95,7 @@ const Login = () => {
               className='  font-medium text-gray-500 py-2 px-2 border-2 border-gray-400 focus:outline-none focus:ring focus:border-blue-500 rounded-xl  mb-4 '
             />
             <input
+              type='password'
               name='password'
               required
               placeholder='password'
