@@ -70,7 +70,7 @@ const Login = () => {
       <div className=' w-full h-full flex flex-col justify-center'>
         <div className='flex justify-center items-center mb-2 '>
           <h1 className='font-bold text-3xl text-gray-600 mr-2 '>
-            Simple Chat
+            Primitive Text
           </h1>
           <Logo width={50} height={50} fill={"#3b82f6"} />
         </div>
